@@ -1,4 +1,4 @@
-package com.vishwas.springbootexample.dbconnetion;
+package com.vishwas.springbootexample.controller;
 
 import java.util.List;
 
@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.vishwas.springbootexample.service.TopicService;
+import com.vishwas.springbootexample.model.Topic;
 
 @RestController
 public class TopicsController {
@@ -31,6 +34,11 @@ public class TopicsController {
 	public String updateTopic(@RequestBody Topic topic ,@PathVariable String id) {
 		return topicService.updateTopic(topic, id);
 		
+	}
+
+	@RequestMapping (method=RequestMethod.DELETE, value="/deleteTopic/{id}")
+	public String deleteTopic(@PathVariable String id){
+		return topicService.deleteTopic(id);
 	}
 	
 
