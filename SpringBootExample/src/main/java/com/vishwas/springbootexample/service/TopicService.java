@@ -59,8 +59,8 @@ public class TopicService {
 		Optional <Topic> topicOptional = topicRepository.findById(id);
 		if (topicOptional.isPresent()){
 			Topic topic = topicOptional.get();
-			topic.setDesc("Vishas is doing something "+ (topicInfo.getDesc()!=null ? topicInfo.getDesc() :""));
-			topic.setName("I am the boss here "+ (topicInfo.getName()!=null ? topicInfo.getName() : ""));
+			topic.setDesc("Vishwas is doing something "+ (topicInfo.getDesc()!=null ? topicInfo.getDesc() :""));
+			topic.setName("I am updated here ::  "+ (topicInfo.getName()!=null ? topicInfo.getName().toUpperCase() : ""));
 			topicRepository.save(topic);
 			return "Topic saved";
 		}
