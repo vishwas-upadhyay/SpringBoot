@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="210cd5d9-2683-470e-a214-903b1dd08a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/exception/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/exception/GlobalExceptiionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/exception/TopicNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SpringBootExamples.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/SpringBootExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/SpringBootExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/controller/TopicsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/TopicsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/model/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/repository/TopicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/repository/TopicRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/java/com/vishwas/springbootexample/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootExample/src/test/java/com/vishwas/springbootexample/SpringBootExampleApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/test/java/com/vishwas/springbootexample/SpringBootExampleApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="210cd5d9-2683-470e-a214-903b1dd08a3d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +35,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
