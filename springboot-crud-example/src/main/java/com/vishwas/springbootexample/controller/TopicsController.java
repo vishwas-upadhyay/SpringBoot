@@ -3,14 +3,14 @@ package com.vishwas.springbootexample.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
+import org.springframework.web.bind.annotation.*;
 
 import com.vishwas.springbootexample.service.TopicService;
 import com.vishwas.springbootexample.model.Topic;
+
+import javax.validation.Valid;
 
 @RestController
 public class TopicsController {
@@ -23,6 +23,15 @@ public class TopicsController {
 	{
 		return topicService.getTopicList();
 	}
+
+	@GetMapping("/topics/{id}")
+	public Resource <Topic> getTopicById(@PathVariable String id){
+		Topic topic = topicService.getTopicById(id);
+		Resource resource = new Resource<Topic>(topic);
+		ControllerLinkBuilder linkTo =ControllerLinkBuilder.linkTo(ControllerLinkBuilder.methodOn(this.getClass()).getTopics());
+		resource.add(linkTo.withRel("all-topics"));
+		return  resource;
+	}
 	
 	@RequestMapping (method=RequestMethod.POST,value="/addTopic")
 	public String addTopic(@RequestBody Topic topic) {
@@ -31,7 +40,7 @@ public class TopicsController {
 	}
 	
 	@RequestMapping (method=RequestMethod.PUT,value="/updateTopic/{id}")
-	public String updateTopic(@RequestBody Topic topic ,@PathVariable String id) {
+	public String updateTopic(@Valid @RequestBody Topic topic , @PathVariable String id) {
 		return topicService.updateTopic(topic, id);
 		
 	}

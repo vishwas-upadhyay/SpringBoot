@@ -1,15 +1,13 @@
 package com.vishwas.springbootexample.service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
+import com.vishwas.springbootexample.exception.TopicNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.vishwas.springbootexample.repository.TopicRepository;
 import com.vishwas.springbootexample.model.Topic;
-import java.util.Optional;
 
 @Service
 public class TopicService {
@@ -51,7 +49,9 @@ public class TopicService {
 			topicRepository.delete(topic.get());
 			return "Deleted";
 		}
-		return "Given Topic not found. Please provide valid topic id";
+		else{
+			throw new RuntimeException();
+		}
 	}
 
 	public String updateTopic(Topic topicInfo, String id) {
@@ -64,9 +64,20 @@ public class TopicService {
 			topicRepository.save(topic);
 			return "Topic saved";
 		}
-		return "Given topic id is not found";
+		else{
+			throw new TopicNotFoundException();
+		}
+
 	}
 
-	
 
+	public Topic getTopicById(String id) {
+		Optional <Topic> topicOptional = topicRepository.findById(id);
+		if(topicOptional.isPresent()){
+			return topicOptional.get();
+		}
+		else{
+			throw new TopicNotFoundException();
+		}
+	}
 }
