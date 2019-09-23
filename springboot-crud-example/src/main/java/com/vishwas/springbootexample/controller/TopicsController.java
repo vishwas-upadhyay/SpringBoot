@@ -17,8 +17,22 @@ public class TopicsController {
 	
 	@Autowired
 	private TopicService topicService ; 
-	
-	@RequestMapping ("/getTopics")
+
+	/* Http header Content-Type mapped to consumes
+	*  Http header Accept mapped to produce if consumes property not configured else if will be mapped to Content-Type header
+	* for versioning, we have multiple option like
+	* 1. URL vesion e.g. V1/getTopic
+	* 2. Custom header versioning e.g. add your header X-VERSION
+	* 3. Request Param versioning e.g. send getTopic/version=v1
+	* 4. Http header versionning e.g. use of produce or consume
+	*
+	* Http has no concept for versioning hence every company is using the way they want it each approach has some cons
+	* Http Header versioning is not good for response caching also request can't hit by browser
+	* Request Param and URI versioning contributes in URI pollution etc
+	* Custom header makes vague understanding of API request call.
+	* */
+
+	@GetMapping (value = "/getTopics",  produces = "application/vishwas+json")
 	public List<Topic> getTopics()
 	{
 		return topicService.getTopicList();
@@ -33,19 +47,19 @@ public class TopicsController {
 		return  resource;
 	}
 	
-	@RequestMapping (method=RequestMethod.POST,value="/addTopic")
+	@PostMapping ("/addTopic")
 	public String addTopic(@RequestBody Topic topic) {
 		return topicService.addTopic(topic);
 		
 	}
 	
-	@RequestMapping (method=RequestMethod.PUT,value="/updateTopic/{id}")
+	@PutMapping ("/updateTopic/{id}")
 	public String updateTopic(@Valid @RequestBody Topic topic , @PathVariable String id) {
 		return topicService.updateTopic(topic, id);
 		
 	}
 
-	@RequestMapping (method=RequestMethod.DELETE, value="/deleteTopic/{id}")
+	@DeleteMapping ("/deleteTopic/{id}")
 	public String deleteTopic(@PathVariable String id){
 		return topicService.deleteTopic(id);
 	}

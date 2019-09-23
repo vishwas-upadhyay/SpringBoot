@@ -58,11 +58,54 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- This dependency required to monitoring application api-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+        <!-- actuator gives data of application api in hal (Hyper text application language) format,
+         So to have this dependency to easily browse through monitoring data of api -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
+
+		<!-- This dependency required to convert json representation of resource in response to Xml-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+
+		<!-- This dependency required to have swagger documentation for application api along with some swagger configuration beans -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+		<!-- This dependency provides the basic authentication to your application API
+		 If you are not configuring username and password in application.property file then every server restart if will generate
+		 new password that you need to pass in request as basic authentication (user/generated password)
+
+		 TODO : security was not working as expected hence commenting this dependency for now
+		 problem 1: custom user name and password is not working.
+		 problem 2: sometime getting 403 for create post endpoint
+		 -->
+		<!--<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency> -->
+
+
 	</dependencies>
+
+
 
 	<build>
 		<plugins>

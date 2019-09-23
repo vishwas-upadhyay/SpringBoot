@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="210cd5d9-2683-470e-a214-903b1dd08a3d" name="Default Changelist" comment="" />
+    <list default="true" id="210cd5d9-2683-470e-a214-903b1dd08a3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/bean/SomeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/DynamicFilteringController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/model/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/repository/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/messages_nl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/SpringBootExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/SpringBootExampleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/TopicsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/TopicsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/model/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-crud-example/src/main/resources/data.sql" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +56,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -88,7 +112,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -96,5 +122,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/PostController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-crud-example/src/main/java/com/vishwas/springbootexample/controller/DynamicFilteringController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
