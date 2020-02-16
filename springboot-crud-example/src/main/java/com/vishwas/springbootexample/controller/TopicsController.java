@@ -19,7 +19,7 @@ public class TopicsController {
 	private TopicService topicService ; 
 
 	/* Http header Content-Type mapped to consumes
-	*  Http header Accept mapped to produce if consumes property not configured else if will be mapped to Content-Type header
+	*  Http header Accept mapped to produce if consumes property not configured else it will be mapped to Content-Type header
 	* for versioning, we have multiple option like
 	* 1. URL vesion e.g. V1/getTopic
 	* 2. Custom header versioning e.g. add your header X-VERSION

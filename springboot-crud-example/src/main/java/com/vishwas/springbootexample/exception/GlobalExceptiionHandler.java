@@ -16,7 +16,8 @@ import java.util.Date;
 @RestController
 
 /*GlobalExceptinHandler required when you want to throw customized exception object.
-It's a good practice to have your organization specific exceptions so that you clints get more info about their request problem.
+It's a good practice to have your organization specific exceptions so that you clients
+ get more info about their request problem.
  */
 public class GlobalExceptiionHandler extends ResponseEntityExceptionHandler {
 
