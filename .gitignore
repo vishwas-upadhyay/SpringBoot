@@ -16,6 +16,17 @@ target/
 *.ipr
 *.log
 
+
+**/.classpath
+**/.project
+**/.settings
+**/.idea
+**/target
+cache/**
+**/*.iml
+Dockerfile
+docker/**
+
 ### NetBeans ###
 nbproject/private/
 build/
