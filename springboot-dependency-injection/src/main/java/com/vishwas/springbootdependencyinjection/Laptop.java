@@ -18,6 +18,7 @@ public class Laptop {
 
     @Autowired
     HardDisk hard;
+    // if you insert same object multiple time spring create only one object by default.
 
     @Autowired
     @Qualifier("hard1")
@@ -29,7 +30,7 @@ public class Laptop {
 
     public void printAll(){
         System.out.println("laptop is availble with screen "+screen.getName()
-               + " Hard disk is "+hardDisk.getName());
+               + " Hard disk is "+hardDisk.getName()+ " Another hard disk is "+hard.getName());
     }
 
 }
